@@ -1,0 +1,101 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>DemoCaricature</title>
+<link href="./DemoCaricature_files/style.css" rel="stylesheet">
+<script type="text/javascript" src="./DemoCaricature_files/jquery.mlens-1.0.min.js"></script> 
+<script type="text/javascript" src="./DemoCaricature_files/jquery.js"></script>
+</head>
+
+<body>
+<div class="content">
+  <h1><strong>DemoCaricature: Democratising Caricature Generation with a Rough Sketch</strong></h1>
+
+  <p id="authors">
+    <a href="https://github.com/ChenDarYen">Dar-Yen Chen</a>
+    <a href="https://subhadeepkoley.github.io/">Subhadeep Koley</a>
+    <a href="https://aneeshan95.github.io/">Aneeshan Sain</a>
+    <a href="https://www.pinakinathc.me/">Pinaki Nath Chowdhury</a>
+    <br>
+    <a href="https://www.surrey.ac.uk/people/tao-xiang">Tao Xiang</a>
+    <a href="https://ayankumarbhunia.github.io/">Ayan Kumar Bhunia</a>
+    <a href="https://www.surrey.ac.uk/people/yi-zhe-song">Yi-Zhe Song</a>
+    <br>
+    <br>
+    <span style="font-size: 24px">SketchX, University of Surrey</span>
+  </p>
+
+  <br>
+<!--  <img src="./DemoCaricature_files/teaser_static.jpg" class="teaser-gif" style="width:90%;">-->
+  <video class="teaser-video" style="width:90%;" controls poster="./DemoCaricature_files/demo_poster.jpg">
+    <source src="./DemoCaricature_files/demo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <br>
+
+  <font size="+2">
+      <p style="text-align: center;">
+        <a href="" target="_blank">[Paper]</a> &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="" target="_blank">[Code]</a> &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="DemoCaricature_files/bibtex.txt" target="_blank">[BibTeX]</a>
+      </p>
+  </font>
+</div>
+
+<div class="content">
+  <h2 style="text-align:center;">Abstract</h2>
+  <img class="summary-img" src="./DemoCaricature_files/banner.jpg" style="width:100%;"> <br>
+  <p>
+    In this paper, we democratise caricature generation, empowering individuals to effortlessly craft personalised caricatures with just a photo and a conceptual sketch. Our objective is to strike a delicate balance between abstraction and identity, while preserving the creativity and subjectivity inherent in a sketch. To achieve this, we present Explicit Rank-1 Model Editing alongside single-image personalisation, selectively applying nuanced edits to cross-attention layers for a seamless merge of identity and style. Additionally, we propose Random Mask Reconstruction to enhance robustness, directing the model to focus on distinctive identity and style features. Crucially, our aim is not to replace artists but to eliminate accessibility barriers, allowing enthusiasts to engage in the artistry.
+  </p>
+</div>
+
+<div class="content">
+  <h2>Approach</h2>
+  <p>
+    Our personalised text-to-image (T2I) framework involves fine-tuning the SD model to capture identity in the reference photo and generate the same identity in various contexts. Consequently, we leverage an off-the-shelf T2I-Sketch-Adapter to spatially condition the identity-adapted SD model. This process effectively integrates shape guidance from sketch, aligning results with the intended shape.
+  </p>
+  <br>
+  <img class="summary-img" src="./DemoCaricature_files/architecture.jpg" style="width:100%;"> <br>
+</div>
+
+<div class="content"  id="gallery">
+  <h2>Gallery</h2>
+  Caricature of celebrities.
+  <br><br>
+  <img class="summary-img" src="./DemoCaricature_files/suppl_celeb.jpg" style="width:100%;"><br><br>
+
+  Caricature of renowned artworks.
+  <br><br>
+  <img class="summary-img" src="./DemoCaricature_files/suppl_art.jpg" style="width:100%;"><br><br>
+
+  Caricature of synthetic portraits.
+  <br><br>
+  <img class="summary-img" src="./DemoCaricature_files/suppl_synthesis.jpg" style="width:100%;"><br>
+</div>
+
+
+<div class="content">
+  <h2>BibTex</h2>
+  <code> @article{chen2023artadapter,<br>
+  &nbsp;&nbsp;title={ArtAdapter: Text-to-Image Style Transfer using Multi-Level Style Encoder and Explicit Adaptation},<br>
+  &nbsp;&nbsp;author={Dar-Yen Chen and Hamish Tennent and Ching-Wen Hsu},<br>
+  &nbsp;&nbsp;booktitle={arXiv preprint arxiv:2312.02109},<br>
+  &nbsp;&nbsp;year={2023}<br>
+  } </code> 
+</div>
+
+<br><br>
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <!-- <div class="content"> -->
+      The website template is taken from <a href="https://dreambooth.github.io/">dreambooth</a> project page.
+      <!-- </div> -->
+    </div>
+  </div>
+</footer>
+<br><br>
+
+</body>
+</html>
