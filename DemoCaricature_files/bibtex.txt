@@ -1,6 +1,6 @@
 @article{chen2023democaricature,
     title={DemoCaricature: Democratising Caricature Generation with a Rough Sketch},
     author={Dar-Yen Chen and Subhadeep Koley and Aneeshan Sain and Pinaki Nath Chowdhury and Tao Xiang and Ayan Kumar Bhunia and Yi-Zhe Song},
-    booktitle={arXiv preprint arxiv:},
+    booktitle={arXiv preprint arxiv:2312.04364},
     year={2023}
 }
